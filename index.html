@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASEJ - Desarrollo Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    <script>
+    function myFunction() {
+        var x = document.getElementById("menu_mobile");
+        if (x.classList.contains("hide")) {
+            x.classList.remove("hide");
+        } else {
+            x.classList.add("hide");
+        }
+    } 
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="img/logo2.png" alt="Logo de ASEJ">
+            </a>
+            <img id="menu-icon" src="img/burger-menu.svg" onclick="myFunction()" alt="">
+
+            <ul id="menu_links" class="menu">
+                <li><a class="menu-link" href="#seccion-servicios">Servicios</a></li>
+                <li><a class="menu-link" href="#seccion-equipo">Equipo</a></li>
+                <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
+                <li><a class="boton-secundario" href="#contacto">Contacto</a></li>
+            </ul>
+            <ul id="menu_mobile" class="menu hide">
+                <li><a class="menu-link" href="#seccion-servicios">Servicios</a></li>
+                <li><a class="menu-link" href="#seccion-equipo">Equipo</a></li>
+                <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
+                <li><a class="boton-secundario" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="hero-section">
+            <img src="img/web-development-illustration.png" alt="">
+            <div class="txt-container">
+                <h1>Transformamos tus ideas en experiencias digitales</h1>
+                <p>Diseños innovadores, tecnología de vanguardia y soluciones a medida para llevar tu negocio al siguiente nivel</p>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="seccion-servicios">
+            <h2>Servicios</h2>
+            <div class="seccion-contenedor flex flex-wrap justify-center text-center">
+                <div class="servicio-columna">
+                    <img src="img/icon8.png" alt="">
+
+                    <h3>Diseño Responsive</h3>
+                    <p>Creamos sitios web que se adaptan perfectamente a cualquier dispositivo, garantizando una experiencia de usuario fluida en móviles, tablets y ordenadores</p>
+                </div>
+                <div class="servicio-columna">
+                    <img src="img/icon12.png" alt="">
+                    <h3>Soluciones a medida</h3>
+                    <p>Nos especializamos en adaptar cada proyecto a las necesidades y objetivos específicos de cada cliente</p>
+                </div>
+                <div class="servicio-columna">
+                    <img src="img/icon3.png" alt="">
+                    <h3>Interfaces Intuitivas</h3>
+                    <p>Diseñamos interfaces visualmente atractivas y fáciles de navegar, asegurando que los usuarios disfruten de una experiencia clara y sin fricciones</p>
+                </div>
+                <div class="servicio-columna">
+                    <img src="img/icon13.png" alt="">
+                    <h3>Escalable</h3>
+                    <p>Creamos soluciones que crecen contigo, permitiendo que tu proyecto se expanda fácilmente a medida que tu negocio lo necesite</p>
+                </div>
+                <div class="servicio-columna">
+                    <img src="img/icon7.png" alt="">
+                    <h3>Seguridad</h3>
+                    <p>Implementamos las mejores prácticas en seguridad para proteger tu sitio web de amenazas, asegurando la protección de datos y transacciones</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="seccion-destacado">
+            <div class="seccion-contenedor">
+                <h2 class="balance">Una solución creativa es la clave para que tu proyecto destaque, por eso desarrollamos <span class="resaltado">ideas originales</span> que te ayuden a alcanzar tus objetivos</h2>
+            </div>
+        </section>
+        <section id="seccion-equipo" class="text-center">
+            <h2>Nuestro Equipo </h2>
+            <p class="balance">Un equipo creativo y colaborativo, combinando diferentes talentos para dar forma a experiencias web que inspiran</p>
+            <div id="equipo-contenedor" class="seccion-contenedor flex flex-wrap justify-center">
+                
+                <div class="miembro-equipo">
+                    <div class="miembro-equipo-img" id="miembro-equipo-img_2">
+                    </div>
+                    <p class="miembro-equipo-nombre">Juan Puertas</p>
+                    <p class="miembro-equipo-rango">Desarrollador Backend</p>
+                </div>
+                <div class="miembro-equipo">
+                    <div class="miembro-equipo-img" id="miembro-equipo-img_3">
+                    </div>
+                    <p class="miembro-equipo-nombre">Sergio Gris</p>
+                    <p class="miembro-equipo-rango">Ingeniero de Software</p>
+                </div>
+                <div class="miembro-equipo">
+                    <div class="miembro-equipo-img" id="miembro-equipo-img_1">
+                    </div>
+                    <p class="miembro-equipo-nombre">Amaia González</p>
+                    <p class="miembro-equipo-rango">Desarrolladora Frontend</p>
+                </div>
+                <div class="miembro-equipo">
+                    <div class="miembro-equipo-img" id="miembro-equipo-img_4">
+                    </div>
+                    <p class="miembro-equipo-nombre">Eneko Hernando</p>
+                    <p class="miembro-equipo-rango">Especialista UX/UI</p>
+                </div>
+            </div>
+        </section>
+        
+        <div id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="seccion-contenedor" >
+                <div class="proyecto flex flex-wrap justify-center items-center">
+                    <img class="proyecto-img" src="img/proyecto-web.png" alt="">
+                    <div class="proyecto-txt">
+                        <h3>Sitio Web Responsive</h3>
+                        <span class="proyecto-txt-tech">HTML</span>
+                        <span class="proyecto-txt-tech">CSS</span>
+                        <span class="proyecto-txt-tech">JavaScript</span>
+                        <span class="proyecto-txt-tech">JAVA</span>
+                        <p>Un sitio web estático para un centro de pilates. La web incluye secciones como inicio, acerca de, servicios, contacto, galería de fotos y ubicación en un mapa interactivo y sistema de reserva de clases</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="proyecto flex flex-wrap justify-center items-center">
+                    <img class="proyecto-img" src="img/proyecto-trivia.png" alt="">
+                    <div class="proyecto-txt">
+                        <h3>Juego Trivia Interactivo</h3>
+                        <span class="proyecto-txt-tech">HTML</span>
+                        <span class="proyecto-txt-tech">CSS</span>
+                        <span class="proyecto-txt-tech">JavaScript</span>
+                        <p>Un juego de trivia donde los jugadores pueden responder preguntas de opción múltiple, y elegir diferentes categorías para el juego. Lleva un contador de tiempo y una puntuación que se muestra al final de las partidas</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="proyecto flex flex-wrap justify-center items-center">
+                    <img class="proyecto-img" src="img/proyecto-app.png" alt="">
+                    <div class="proyecto-txt">
+                        <h3>Aplicación de To-Do List + Gamificación</h3>
+                        <span class="proyecto-txt-tech">JAVA</span>
+                        <span class="proyecto-txt-tech">Bootstrap</span>
+                        <p>Una aplicación web donde los usuarios pueden gestionar sus tareas diarias. El sistema permite agregar, editar, eliminar y marcar tareas como completadas. Obteniendo puntos y recompensas por cada tarea realizada</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="comentarios">
+            <h2>Lo que nuestros clientes dicen de nosotros</h2>
+            <p class="subtitulo">Experiencias reales y resultados que hablan por sí mismos en cada proyecto web que desarrollamos</p>
+            <div class="comentarios-contenedor ">
+                <div class="comentario">
+                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                    <p>El equipo de ASEJ entendió nuestras necesidades y nos entregó una web increíble. Excelente diseño y atención al detalle. Muy recomendados.</p>
+                    <p class="nombre-cliente">Luis G., Director de Marketing</p>
+                </div>
+                <div class="comentario">
+                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                    <p>Profesionales, rápidos y muy atentos. Transformaron nuestra visión en una web funcional y moderna. Estamos muy satisfechos con el resultado.</p>
+                    <p class="nombre-cliente">Marta B., Directora de Ventas </p>
+                </div>
+                <div class="comentario">
+                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                    <p>Más allá de desarrollar nuestra web, nos dieron ideas para mejorar la experiencia del usuario y la velocidad de carga.</p>
+                    <p>Definitivamente, su trabajo hizo que nuestro negocio fuera más competitivo.</p>
+                    <p class="nombre-cliente">Alicia N., CEO</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="seccion-contenedor flex flex-wrap justify-center items-stretch">
+                <div class="formulario">
+                    <h3>Contacto</h3>
+                    <p>¿Tienes alguna pregunta o necesitas más información? Rellena el formulario y nuestro equipo se pondrá en contacto contigo para ofrecerte la mejor solución para tu proyecto web</p>
+                    <form class="form" id="" action="">
+                        <div class="form__input-group">
+                            <label for="Nombre">Nombre</label> 
+                            <input class="form__input" type="text" placeholder="Nombre" id="nombre" name="nombre" pattern="[a-zA-Z]{3,}" required>
+                        </div>
+                        <div class="form__input-group">
+                            <label for="Email">Email</label>
+                            <input class="form__input" type="email" placeholder= "Correo electrónico" id="email" name = "email" pattern="(?!.*\.\.)(^[^\.][^@\s]+@[^@\s]+\.[^@\s\.]+$)" required>
+                        </div>
+                        <div class="form__input-group">
+                            <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id=""></textarea>
+                        </div>
+                        <div class="formContent">
+                            <button class="boton form__button" id='boton' type="submit">Enviar</button><br>
+                        </div>
+                    </form>
+                </div>
+                <div class="mapa">
+                    <div class="mapa-img"></div>
+                    <div class="mapa-txt flex justify-between">
+                        <p>📞 +34 946 23 23 23</p>
+                        <p>📧 info@asej.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div id="footer-contacto">
+            <img src="img/logo2_dark.png" alt="Logo de ASEJ">
+            <p>+34 946 23 23 23</p>
+            <p>info@asej.com</p>
+        </div>
+        <div id="footer-rrss">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icon-fb.png"></a> 
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icon-ig.png"></a>
+            <a href="https://www.x.com/" target="_blank"><img src="img/icon-x.png"></a>
+        </div>
+        <div class="copyright">
+            2024 ©  Todos los derechos reservados
+        </div>
+        <a href="#" id="subir">
+            <img src="img/subir.png" alt="">
+        </a>
+    </footer>
+</body>
+</html>
